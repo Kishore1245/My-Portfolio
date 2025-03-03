@@ -1,0 +1,104 @@
+.projects-section {
+  background-color: #f7f7f7;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  color: #333;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.project-card {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-card-body {
+  padding: 20px;
+}
+
+.project-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #6c63ff; /* New color for title */
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #666; /* Lighter color for description */
+  margin-bottom: 20px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.btn-github {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.btn-github:hover {
+  background-color: #5e5e5e;
+  transform: translateY(-5px);
+}
+
+.custom-card {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #6c63ff, #ff6b6b);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.project-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #6c63ff;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    margin-bottom: 30px;
+  }
+}

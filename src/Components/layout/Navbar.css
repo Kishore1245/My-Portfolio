@@ -1,0 +1,102 @@
+/* NavBar.css */
+.custom-navbar {
+  background: linear-gradient(45deg, #2c3e50, #4ca1af);
+  transition: all 0.4s ease-in-out;
+  padding: 15px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar.scrolled {
+  background: linear-gradient(45deg, #1f1c2c, #928dab);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+}
+
+.custom-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+
+.custom-brand:hover {
+  color: #f39c12;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
+.custom-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #f1c40f;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.custom-link.active {
+  background: #f39c12;
+  color: #fff;
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-link:hover .icon {
+  transform: rotate(360deg);
+}
+
+/* Contact Button */
+.custom-btn {
+  background: #e74c3c;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+  background: #c0392b;
+  box-shadow: 0px 4px 15px rgba(231, 76, 60, 0.4);
+  transform: scale(1.05);
+}
+
+/* Responsive Navbar */
+@media (max-width: 992px) {
+  .custom-navbar {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    margin-top: 20px;
+  }
+
+  .custom-link {
+    font-size: 1rem;
+    padding: 12px 20px;
+    justify-content: center;
+  }
+
+  .custom-btn {
+    width: 100%;
+    padding: 12px;
+  }
+}

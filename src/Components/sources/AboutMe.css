@@ -1,0 +1,119 @@
+/* Unique Animated Background */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.about-section {
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  color: #333;
+  padding: 60px 0;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating Particles */
+@keyframes float {
+  0% { transform: translateY(0px); opacity: 0.8; }
+  50% { transform: translateY(-20px); opacity: 1; }
+  100% { transform: translateY(0px); opacity: 0.8; }
+}
+
+.particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: float 4s infinite ease-in-out;
+}
+
+/* Position particles randomly */
+.particle:nth-child(1) { top: 10%; left: 20%; animation-duration: 6s; }
+.particle:nth-child(2) { top: 50%; left: 80%; animation-duration: 8s; }
+.particle:nth-child(3) { top: 30%; left: 60%; animation-duration: 5s; }
+.particle:nth-child(4) { top: 70%; left: 40%; animation-duration: 7s; }
+.particle:nth-child(5) { top: 90%; left: 10%; animation-duration: 6.5s; }
+
+/* Updated Profile Image Style */
+.profile-img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50% / 30%;
+  border: 5px solid white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Updated Highlight Colors */
+.highlight-name {
+  color: #e84393; /* Pink */
+  font-weight: bold;
+}
+
+.highlight-project {
+  color: #0984e3; /* Blue */
+  font-weight: bold;
+}
+
+.highlight-tech {
+  color: #ff6b6b; /* Bold Red */
+  font-weight: bold;
+}
+
+.highlight-frontend {
+  color: #e67e22; /* Orange */
+  font-weight: bold;
+}
+
+.highlight-backend {
+  color: #2ecc71; /* Green */
+  font-weight: bold;
+}
+
+.highlight-database {
+  color: #9b59b6; /* Purple */
+  font-weight: bold;
+}
+
+.highlight-education {
+  color: #6c5ce7; /* Deep Purple */
+  font-weight: bold;
+}
+
+.highlight-internship {
+  color: #f7b731; /* Yellow */
+  font-weight: bold;
+}
+
+.highlight-institute {
+  color: #00ab78; /* Royal Blue for high contrast */
+  font-weight: bold;
+}
+
+
+.highlight-passion {
+  color: #fd79a8; /* Light Pink */
+  font-weight: bold;
+}
+
+/* Button Enhancements */
+.btn {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d63031;
+}
