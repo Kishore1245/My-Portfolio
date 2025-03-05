@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FaHome, FaUser, FaCode, FaProjectDiagram, FaFileAlt, FaEnvelope } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./NavBar.css";
+import "./Navbar.css";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
