@@ -2,8 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./AboutMe.css";
-import profileImage from "../../assets/KISHORE.jpg"; 
+import "./About.css";
+
+const profileImage = "/KISHORE.jpg"; // Correct way to use public images in Vite
 
 const About = () => {
   return (
@@ -31,7 +32,7 @@ const About = () => {
         {/* Left Side - Profile Image */}
         <div className="col-lg-5 col-md-6 text-center">
           <motion.img
-            src={profileImage}
+            src={profileImage} // Correct usage
             alt="Profile"
             className="profile-img img-fluid" 
             initial={{ opacity: 0, scale: 0.8 }}
