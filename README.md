@@ -47,7 +47,7 @@ Here are some previews of my projects:
 5. **Resume**  
    ![Resume](src/images/Resume.png)
 
-> **Note**: Please upload your screenshots to a `screenshots/` folder in your repository to display them correctly.
+>
 
 ## 📈 GitHub Stats
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Kishore1245&show_icons=true&theme=radical)
