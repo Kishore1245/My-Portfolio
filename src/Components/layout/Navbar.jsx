@@ -6,21 +6,18 @@ import "./Navbar.css";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true); // Track navbar toggle state
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
   return (
     <nav className={`custom-navbar navbar navbar-expand-lg ${scrolled ? "scrolled" : ""}`}>
@@ -35,14 +32,15 @@ const NavBar = () => {
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
-          aria-expanded="false"
+          aria-expanded={!isNavCollapsed ? "true" : "false"}
           aria-label="Toggle navigation"
+          onClick={handleNavCollapse}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
+        <div className={`collapse navbar-collapse ${isNavCollapsed ? "" : "show"}`} id="navbarNav">
+          <ul className="navbar-nav ms-auto" onClick={() => setIsNavCollapsed(true)}>
             <li className="nav-item">
               <NavLink className="nav-link custom-link" to="/">
                 <FaHome className="icon" /> Home
