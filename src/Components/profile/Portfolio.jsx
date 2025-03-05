@@ -50,7 +50,7 @@ const Portfolio = () => {
             <a href="https://github.com/Kishore1245" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaGithub />
             </a>
-            <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://www.linkedin.com/in/kishore-sriedhar-1211k2003/" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaLinkedin />
             </a>
             <a href="https://www.instagram.com/kishore_s_2003" target="_blank" rel="noopener noreferrer" className="social-icon">
